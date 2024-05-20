@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2ecbe;
+}
+
+.cardwrapper h2,
+h3 {
+  color: #3f2305;
+}
+
+.cardwrapper p {
+  color: #3f2305;
+}
+
+footer {
+  height: 8rem;
+  width: 100%;
+  color: black;
+  background-color: #ba704f;
+  text-align: center;
+}
+
+footer .sosmed .icon img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+footer .sosmed p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+#aboutus {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#aboutus .text {
+  line-height: 1.5;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profil header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.profil header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profil img {
+  width: 220px;
+  border-radius: 15px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumbotron {
+  font-size: 50px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.65) url(../img/Background\ Header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.jumbotron h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 130px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.jumbotron p {
+  font-size: 15px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.Cus {
+  padding: 0.5rem 1rem;
+  background-color: #3f2305;
+  margin-block-start: 1rem;
+  margin-top: 5rem;
+  font-weight: 400;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.Cus:hover {
+  border: 2px solid #ba704f;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 3rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #ba704f;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a:hover {
+  color: #3f2305;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #3f2305;
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+main {
+  padding: 18px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  margin-top: 20px;
+  flex-flow: column;
+}
+
+.card img {
+  height: 250px;
+  border-radius: 15px;
+}
+.card h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card p {
+  padding-left: 1rem;
+  align-self: flex-end;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+#menu-title {
+  text-align: center;
+}
+
+#menu-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+
+#menu-title p {
+  margin-top: 0px;
+}
+
+/* contact us */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3f2305;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3f2305;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #ba704f;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
